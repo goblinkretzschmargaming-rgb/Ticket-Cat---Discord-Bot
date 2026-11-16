@@ -40,14 +40,18 @@ The SQLite ticket database stores ticket metadata, topics, reasons, ratings, and
 
 ## 3. Purposes
 
-We use this information to:
+Ticket records and transcripts are intended to document the support interaction that took place in a ticket. The transcript is a record of the conversation in the ticket channel, so the relevant server's authorised staff and administrators can review what was said, assess whether support was handled professionally, understand whether the user received the help they needed, and follow up on complaints, disputes, or unresolved issues. The Bot does not need to add unrelated personal information to the transcript for these purposes.
+
+We also use the associated information to:
 - Create, route, assign, manage, reopen, close, and delete ticket channels.
 - Enforce ticket limits and server-specific blacklist rules.
 - Apply category, staff-role, and channel permissions.
 - Detect configured auto-responder phrases within ticket messages.
-- Record support actions and generate audit logs, closure receipts, and transcripts.
+- Record support actions and generate audit logs and closure receipts.
 - Collect optional ratings and feedback and calculate support statistics.
 - Maintain, troubleshoot, secure, and improve the Bot.
+
+The transcript is a representation of the messages available in the ticket channel when it is generated, not a guarantee that every message or attachment is reproduced in full. As implemented, it retrieves up to 500 messages, excludes bot-authored messages, and represents attachments by a short label or filename rather than copying their contents.
 
 ## 4. Legal basis and applicable data-protection law
 
