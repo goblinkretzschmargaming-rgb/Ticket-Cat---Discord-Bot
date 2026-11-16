@@ -72,17 +72,17 @@ Server administrators configure log and transcript channels and are responsible 
 
 **Current practice: ticket database records are retained indefinitely.** The operator has stated that ticket records are intended to remain available without a fixed expiry. The supplied code has no automatic retention period, scheduled purge, or per-server deletion command.
 
-The SQLite database is a single database file (ticketcat.db) containing records for multiple Discord servers, distinguished by each record's server (guild) ID. It is not a separate database file controlled independently by each Discord server. Ticket metadata, close reasons, ratings, feedback, blacklist entries, and statistics remain in that database unless they are manually removed or the relevant database data/file is otherwise deleted.
+The SQLite database is a single database file (ticketcat.db) containing records for multiple Discord servers, distinguished by each record's server (guild) ID; it is not a separate database file controlled independently by each Discord server. Server administrators configure their own ticket channels, log channels, transcript channels, and access permissions, but the database retention described here is managed by the Bot operator. Ticket metadata, close reasons, ratings, feedback, blacklist entries, and statistics remain in that database unless they are manually removed or the relevant database data/file is otherwise deleted.
 
 When a ticket channel is deleted through the Bot, the ticket's database row is retained and its status is changed to Deleted. Deleting the Discord channel therefore does not itself erase the database record. Transcript attachments and log messages uploaded to Discord may also remain there until deleted from Discord.
 
-The operator has not confirmed backup retention, host-level logs, or a formal manual deletion workflow. Indefinite retention must be reviewed against the purposes for which the information is held and applicable data-protection requirements. Under the GDPR storage-limitation principle, personal data should not be kept longer than necessary; a blanket promise to keep identifiable ticket records forever may not be lawful in every circumstance. Requests for erasure or restriction will be assessed under applicable law, and records will be deleted where required. Contact **odsb uz@gmail.com** to make a request.
+The operator has not confirmed backup retention, host-level logs, or a formal manual deletion workflow. Indefinite retention must be reviewed against the purposes for which the information is held and applicable data-protection requirements. Under the GDPR storage-limitation principle, personal data should not be kept longer than necessary; a blanket promise to keep identifiable ticket records forever may not be lawful in every circumstance. Requests for erasure or restriction will be assessed under applicable law, and records will be deleted where required. Contact **odsbudz@gmail.com** to make a request.
 
 ## 7. Your privacy rights and requests
 
 Depending on your location and applicable law, you may have rights to request access, correction, deletion, restriction, or portability of personal information, or to object to certain processing. Where processing relies on consent, you may be able to withdraw it.
 
-Contact **odsb uz@gmail.com** with your request and enough information to identify the relevant server and ticket. Do not send passwords or sensitive identity documents through an ordinary Discord ticket. We may need to verify your request and may retain some information where permitted or required by law.
+Contact **odsbudz@gmail.com** with your request and enough information to identify the relevant server and ticket. Do not send passwords or sensitive identity documents through an ordinary Discord ticket. We may need to verify your request and may retain some information where permitted or required by law.
 
 Server administrators can delete Discord channels or messages they control, but that may not delete the corresponding SQLite record, uploaded transcript, log, or backup. Requests concerning information held by Discord itself should also be directed to Discord.
 
@@ -104,7 +104,7 @@ We may update this Policy when the Bot's features or data practices change. The 
 
 ## 12. Contact
 
-Privacy requests and questions: **odsb uz@gmail.com**.
+Privacy requests and questions: **odsbudz@gmail.com**.
 
 If you are in Denmark and believe personal data has been processed in breach of applicable data-protection law, you may lodge a complaint with the Danish Data Protection Agency (Datatilsynet): https://www.datatilsynet.dk/english.
 
