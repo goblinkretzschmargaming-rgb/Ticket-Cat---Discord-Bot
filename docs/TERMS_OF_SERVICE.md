@@ -100,7 +100,7 @@ We may revise these Terms as the Bot or applicable requirements change. We will 
 - **Operator / public name:** odsbud (Discord)
 - **Governing law:** The laws of Denmark.
 - **Jurisdiction:** The competent courts in Denmark, subject to any mandatory rules that give consumers or other users the right to bring proceedings elsewhere.
-- **Contact email:** odsb uz@gmail.com
+- **Contact email:** odsbudz@gmail.com
 
 The operator is based in Denmark. The operator's full legal name and postal address have not been supplied in this draft; these should be added where required by applicable law. Nothing in this section removes any mandatory consumer or data-protection rights that apply to you.
 
