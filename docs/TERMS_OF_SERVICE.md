@@ -49,9 +49,9 @@ Incorrect role hierarchy or channel permissions can prevent features from workin
 
 ## 5. Tickets, transcripts, logs, and ratings
 
-Ticket content is supplied by users and may be visible to the ticket creator, authorised staff, and server administrators. The Bot can generate a text transcript when a ticket is closed or deleted, subject to its configuration and successful access to the relevant Discord channels.
+Ticket content is supplied by users and may be visible to the ticket creator, authorised staff, and server administrators. The purpose of a transcript is to preserve a record of what was said in the support conversation. This allows the relevant server's authorised staff and administrators to review the interaction, assess professionalism and support quality, determine whether the user received the help they needed, and investigate complaints, disputes, or unresolved matters. Ticket Cat is not intended to use transcript contents for unrelated profiling or to collect information beyond what is needed to operate and document the ticketing service.
 
-The current transcript implementation processes up to 500 channel messages, excludes bot-authored messages, and represents image attachments as [Image] and other attachments by filename. Transcripts may be uploaded to the configured transcript channel or, if unavailable, the log channel.
+The current transcript implementation processes up to 500 channel messages, excludes bot-authored messages, and represents image attachments as [Image] and other attachments by filename; it does not embed the actual attachment contents. Transcripts may be uploaded to the configured transcript channel or, if unavailable, the log channel. The transcript is therefore a limited text record of the ticket channel, not necessarily a complete copy of every message and attachment.
 
 Closing a ticket does not necessarily erase its record. The current implementation marks a deleted ticket as Deleted in the database while retaining its ticket row; transcript files and log messages may also remain in Discord. Server administrators should manage channel access and retention appropriately.
 
