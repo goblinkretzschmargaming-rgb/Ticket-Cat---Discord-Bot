@@ -5,84 +5,79 @@
 
 These Terms of Service ("Terms") govern access to and use of the **Ticket Cat** Discord bot ("Ticket Cat", "the Bot", "we", "us", or "our"). By inviting, configuring, or using the Bot, you agree to these Terms. If you do not agree, do not use the Bot.
 
-> **Operator details to complete before publication:** [INSERT OPERATOR / LEGAL NAME] and [INSERT CONTACT EMAIL]. This document is a draft and is not legal advice.
+> **Complete before publication:** [INSERT OPERATOR / LEGAL NAME], [INSERT CONTACT EMAIL], and the governing-law details in Section 14. This is a general draft, not legal advice.
 
 ## 1. What Ticket Cat does
 
-Ticket Cat is a Discord support and ticket-management bot. Depending on the features enabled and server configuration, it may provide:
+Ticket Cat is a Discord support and ticket-management bot. Depending on the version and server configuration, it may provide:
+- Ticket creation, categories, ticket limits, and private ticket channels.
+- Ticket claiming, staff-role routing, transfers, priorities, and closure reasons.
+- Ticket transcripts, audit logs, and direct-message closure receipts.
+- Optional star ratings and written feedback.
+- Blacklisting and abuse-prevention features.
+- Auto-responses, support statistics, dashboards, and administrative setup tools.
 
-- Ticket creation and management, including ticket limits and categories.
-- Ticket claiming, department transfers, priorities, and closure reasons.
-- Ticket transcripts, closure receipts, and audit/log messages.
-- Optional support ratings and written feedback.
-- Support statistics, staff setup, automatic responses, and help information.
-- Administrative configuration and abuse-prevention tools, including blacklisting.
+Features depend on Discord permissions, role hierarchy, server configuration, and the Bot's availability.
 
-Features may change, be unavailable, or behave differently depending on the version and configuration deployed in a Discord server.
+## 2. Eligibility and Discord
 
-## 2. Eligibility and Discord account
-
-You must be permitted to use Discord under Discord's terms and meet the minimum age requirements applicable to you. You must comply with Discord's Terms of Service, Community Guidelines, and other applicable policies while using Ticket Cat.
-
-Ticket Cat is not owned, operated, or endorsed by Discord unless expressly stated otherwise. Discord is a separate service and its own terms apply.
+You must meet the minimum age requirements applicable to your use of Discord and comply with Discord's Terms of Service, Community Guidelines, and other applicable policies. Ticket Cat is an independent third-party bot and is not owned, operated, or endorsed by Discord unless expressly stated otherwise. Discord's own terms and privacy policy apply to your use of Discord.
 
 ## 3. Acceptable use
 
-You agree not to use Ticket Cat to:
-
-- Spam, flood, or repeatedly create tickets to disrupt support operations or evade configured limits.
-- Harass, threaten, abuse, or discriminate against users or support representatives.
+You must not use Ticket Cat to:
+- Spam, flood, or repeatedly create tickets to disrupt support or evade configured limits.
+- Harass, threaten, abuse, or discriminate against users or staff.
 - Submit malicious files, harmful links, or content intended to compromise users, servers, or systems.
-- Impersonate another person or misrepresent information in a support request.
+- Impersonate another person or knowingly submit deceptive information.
 - Exploit bugs, bypass permissions, interfere with the Bot, or attempt unauthorised access.
-- Use tickets for unlawful purposes or to submit content that violates Discord's policies or applicable law.
-- Abuse commands, ratings, feedback, or other features to manipulate support operations or statistics.
+- Violate applicable law, Discord policies, or the rules of the server using the Bot.
+- Manipulate ratings, feedback, statistics, blacklists, or other Bot features.
 
-You should provide a clear topic and accurate, relevant details when opening a ticket. Avoid duplicate tickets for the same issue and remain respectful while waiting for support.
+When opening a ticket, provide a clear topic and relevant details, avoid duplicate tickets, and communicate respectfully. Do not submit passwords, payment-card details, or other highly sensitive information unless a secure process has specifically been provided.
 
-## 4. Server administrators and permissions
+## 4. Server owner and administrator responsibilities
 
-Server owners and administrators are responsible for:
-
+The server owner and administrators are responsible for:
 - Deciding whether to invite and use Ticket Cat.
-- Configuring the Bot, its roles, channel permissions, ticket categories, and staff access.
-- Ensuring only appropriate staff can view ticket channels, transcripts, and logs.
-- Providing any notices required to members about the server's use of the Bot and its handling of ticket information.
-- Ensuring their use of Ticket Cat complies with applicable laws, Discord policies, and their own server rules.
+- Configuring categories, ticket limits, staff roles, channel permissions, log channels, and transcript channels.
+- Ensuring only appropriate people can access private ticket channels, logs, and transcripts.
+- Informing server members about the server's ticket-handling and privacy practices where required.
+- Ensuring their use of the Bot complies with applicable laws, Discord policies, and their own server rules.
 
-The Bot may require suitable role hierarchy and channel permissions to perform its functions. Incorrect configuration may prevent some features from working or may expose ticket information to people who should not have access.
+Incorrect role hierarchy or channel permissions can prevent features from working or expose ticket information to unintended people. Administrators should review permissions after setup and whenever roles or categories change.
 
-## 5. Support tickets, transcripts, and feedback
+## 5. Tickets, transcripts, logs, and ratings
 
-Ticket content is supplied by users and may be accessible to the relevant server staff and administrators. Ticket transcripts and logs may be created when tickets are closed or deleted, depending on the server's configuration and the Bot's deployed features.
+Ticket content is supplied by users and may be visible to the ticket creator, authorised staff, and server administrators. The Bot can generate a text transcript when a ticket is closed or deleted, subject to its configuration and successful access to the relevant Discord channels.
 
-Where feedback is enabled, users may be invited to submit a rating and optional written feedback. Do not submit information you do not have permission to share. Support representatives may be excluded from rating flows as configured by the server.
+The current transcript implementation processes up to 500 channel messages, excludes bot-authored messages, and represents image attachments as [Image] and other attachments by filename. Transcripts may be uploaded to the configured transcript channel or, if unavailable, the log channel.
 
-Ticket Cat does not guarantee that a server's support representatives will respond, resolve a request, or meet a particular response time.
+Closing a ticket does not necessarily erase its record. The current implementation marks a deleted ticket as Deleted in the database while retaining its ticket row; transcript files and log messages may also remain in Discord. Server administrators should manage channel access and retention appropriately.
 
-## 6. Enforcement and access restrictions
+If ratings are enabled, a ticket creator may receive a direct message inviting them to submit a 1–5 star rating and optional feedback. Staff accounts identified by the Bot's support-role or permission check are excluded from the rating controls.
 
-Ticket Cat or server administrators may restrict access, close tickets, blacklist users, or disable features where reasonably necessary to address abuse, protect the service or community, enforce server rules, or comply with law.
+## 6. Enforcement and restrictions
 
-Server administrators control their own Discord servers and may remove the Bot or change its permissions at any time. We may suspend or discontinue the Bot or any feature where necessary for maintenance, security, operational, or legal reasons.
+The Bot or server administrators may restrict ticket access, close tickets, blacklist users, or disable features where reasonably necessary to address abuse, protect a community or the service, enforce server rules, or comply with law. Server administrators control their own servers and may remove the Bot or change its permissions at any time.
 
 ## 7. User content
 
-You retain whatever rights you have in the messages, files, and other content you submit. You are responsible for that content and must have the rights and permissions needed to submit it.
+You retain whatever rights you have in content you submit. You are responsible for ensuring that you have the rights and permissions needed to submit it.
 
-You grant the Bot operator permission to process and display submitted content only as reasonably necessary to provide, secure, and maintain the ticket and support features, including routing tickets, displaying them to authorised staff, and generating transcripts or logs.
+You permit the Bot operator to process and display that content as reasonably necessary to provide, secure, and maintain the Bot's ticketing features, including routing tickets, displaying them to authorised staff, and creating transcripts and logs. This does not transfer ownership of your content to the operator.
 
 ## 8. Availability and changes
 
-Ticket Cat is provided on an as-available basis. We do not guarantee uninterrupted, error-free, or continuous operation, compatibility with every Discord server configuration, or permanent availability of any feature. We may update, modify, limit, or discontinue features.
+Ticket Cat is provided on an as-available basis. We do not guarantee uninterrupted or error-free operation, compatibility with every server configuration, a particular support response time, or permanent availability of any feature. We may modify, suspend, or discontinue the Bot or any feature for maintenance, security, operational, or legal reasons.
 
 ## 9. Third-party services
 
-Ticket Cat depends on Discord and may depend on third-party hosting, database, or infrastructure services. We are not responsible for outages, changes, or actions of third-party services outside our reasonable control. Your use of third-party services is subject to their own terms and policies.
+Ticket Cat depends on Discord and may depend on third-party hosting or infrastructure services. Those services are governed by their own terms and policies. To the extent permitted by law, the Bot operator is not responsible for third-party outages or changes outside its reasonable control.
 
 ## 10. Disclaimers
 
-To the extent permitted by applicable law, Ticket Cat is provided without warranties of any kind, whether express or implied. We do not warrant that the Bot will meet every server's requirements, that data will never be lost, or that every ticket or transcript will always be available.
+To the extent permitted by applicable law, Ticket Cat is provided without warranties, express or implied. We do not warrant that the Bot will meet every user's requirements, that data will never be lost, or that every ticket or transcript will always be available.
 
 Nothing in these Terms excludes or limits a right or remedy that cannot lawfully be excluded or limited.
 
@@ -90,22 +85,24 @@ Nothing in these Terms excludes or limits a right or remedy that cannot lawfully
 
 To the maximum extent permitted by applicable law, the Bot operator will not be liable for indirect, incidental, special, consequential, or punitive losses, or for loss of profits, goodwill, data, or business opportunities arising from use of or inability to use Ticket Cat.
 
-Nothing in these Terms limits liability where such limitation is prohibited by law, including liability for fraud or wilful misconduct where it cannot legally be excluded.
+Nothing in these Terms limits liability where such limitation is prohibited by law. Any limitation in this section applies only to the extent legally enforceable.
 
 ## 12. Privacy
 
-Use of Ticket Cat is also subject to the **Ticket Cat Privacy Policy**, which explains how information may be processed in connection with the Bot. The Privacy Policy should be published at **[INSERT PRIVACY POLICY URL]**.
+The Ticket Cat Privacy Policy explains how information may be processed in connection with the Bot. It is available at **[INSERT PRIVACY POLICY URL]** and forms part of the information governing use of Ticket Cat.
 
 ## 13. Changes to these Terms
 
-We may revise these Terms as the Bot or applicable requirements change. We will publish the updated version with a revised "Last updated" date. Continued use after the updated Terms take effect means you accept the revised Terms, to the extent permitted by applicable law.
+We may revise these Terms as the Bot or applicable requirements change. We will publish the updated version with a revised "Last updated" date. Continued use after changes take effect constitutes acceptance only to the extent permitted by applicable law.
 
 ## 14. Governing law and contact
 
-**Governing law / jurisdiction:** [INSERT THE COUNTRY AND JURISDICTION THAT APPLY TO THE BOT OPERATOR, SUBJECT TO MANDATORY CONSUMER-PROTECTION LAWS].
+- **Operator / legal name:** [INSERT YOUR NAME OR ORGANISATION]
+- **Governing law and jurisdiction:** [INSERT THE APPLICABLE COUNTRY / JURISDICTION, SUBJECT TO MANDATORY LAW]
+- **Contact email:** [INSERT CONTACT EMAIL]
 
-Questions about these Terms: **[INSERT CONTACT EMAIL]**
+Nothing in this section removes any mandatory consumer or data-protection rights that apply to you.
 
 ---
 
-*These Terms are a general draft for Ticket Cat. Complete the placeholders and obtain appropriate legal review before publication, especially if the Bot is offered publicly or processes information about users in multiple countries.*
+*This document is a general draft based on the Ticket Cat source code supplied to the drafter. Complete the placeholders and obtain appropriate legal review before publication, especially if the Bot is offered publicly or to users in multiple countries.*
