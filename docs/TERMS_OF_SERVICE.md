@@ -5,7 +5,7 @@
 
 These Terms of Service ("Terms") govern access to and use of the **Ticket Cat** Discord bot ("Ticket Cat", "the Bot", "we", "us", or "our"). By inviting, configuring, or using the Bot, you agree to these Terms. If you do not agree, do not use the Bot.
 
-> **Complete before publication:** [INSERT OPERATOR / LEGAL NAME], [INSERT CONTACT EMAIL], and the governing-law details in Section 14. This is a general draft, not legal advice.
+> **Important:** The public operator name supplied for this draft is **odsbud** (Discord). The operator's full legal name and postal contact address have not been supplied; add any details required by applicable law before publication. This is a general draft, not legal advice.
 
 ## 1. What Ticket Cat does
 
@@ -89,7 +89,7 @@ Nothing in these Terms limits liability where such limitation is prohibited by l
 
 ## 12. Privacy
 
-The Ticket Cat Privacy Policy explains how information may be processed in connection with the Bot. It is available at **[INSERT PRIVACY POLICY URL]** and forms part of the information governing use of Ticket Cat.
+The Ticket Cat Privacy Policy explains how information may be processed in connection with the Bot. It is available at https://github.com/goblinkretzschmargaming-rgb/Ticket-Cat---Discord-Bot/blob/main/docs/PRIVACY_POLICY.md and forms part of the information governing use of Ticket Cat.
 
 ## 13. Changes to these Terms
 
@@ -97,11 +97,12 @@ We may revise these Terms as the Bot or applicable requirements change. We will 
 
 ## 14. Governing law and contact
 
-- **Operator / legal name:** [INSERT YOUR NAME OR ORGANISATION]
-- **Governing law and jurisdiction:** [INSERT THE APPLICABLE COUNTRY / JURISDICTION, SUBJECT TO MANDATORY LAW]
-- **Contact email:** [INSERT CONTACT EMAIL]
+- **Operator / public name:** odsbud (Discord)
+- **Governing law:** The laws of Denmark.
+- **Jurisdiction:** The competent courts in Denmark, subject to any mandatory rules that give consumers or other users the right to bring proceedings elsewhere.
+- **Contact email:** odsb uz@gmail.com
 
-Nothing in this section removes any mandatory consumer or data-protection rights that apply to you.
+The operator is based in Denmark. The operator's full legal name and postal address have not been supplied in this draft; these should be added where required by applicable law. Nothing in this section removes any mandatory consumer or data-protection rights that apply to you.
 
 ---
 
