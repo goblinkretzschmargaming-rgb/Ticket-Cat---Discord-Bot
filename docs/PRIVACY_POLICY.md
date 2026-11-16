@@ -5,15 +5,15 @@
 
 This Privacy Policy explains how the operator of **Ticket Cat** ("Ticket Cat", "we", "us", or "our") handles information when you use the Ticket Cat Discord bot.
 
-> **Publication checklist:** Replace all bracketed placeholders and verify the actual hosting, access, backup, and retention arrangements before publication. This is a general draft, not legal advice.
+> **Important:** The public operator name supplied for this draft is **odsbud** (Discord). The operator's full legal name and postal contact address have not been supplied. Add any identity/contact details required by applicable law before publication. This is a general draft, not legal advice.
 
 ## 1. Who is responsible?
 
-- **Operator / legal name:** [INSERT YOUR NAME OR ORGANISATION]
-- **Privacy contact email:** [INSERT CONTACT EMAIL]
-- **Country / business address (if applicable):** [INSERT DETAILS]
+- **Operator / public name:** odsbud (Discord)
+- **Country:** Denmark
+- **Privacy contact email:** odsbudz@gmail.com
 
-The operator identified above is responsible for deciding why and how Ticket Cat data is processed. Contact us at the email above with privacy questions or requests.
+The Bot is developed and operated by the individual using the public name **odsbud**. The operator's full legal name and postal address have not been provided in this draft; these should be added if required to identify the data controller adequately under applicable law. Contact **odsbudz@gmail.com** with privacy questions or requests.
 
 ## 2. Information processed
 
@@ -49,9 +49,11 @@ We use this information to:
 - Collect optional ratings and feedback and calculate support statistics.
 - Maintain, troubleshoot, secure, and improve the Bot.
 
-## 4. Legal basis
+## 4. Legal basis and applicable data-protection law
 
-Where applicable data-protection law requires a legal basis, the operator must identify and document one for each purpose. Depending on the deployment and context, possible bases may include legitimate interests in providing and securing a support system, steps taken at a server administrator's request, or consent where it is genuinely required. This draft does not determine the legal basis for the operator.
+The operator is based in Denmark. Where the GDPR applies, each processing purpose must have an appropriate legal basis under Article 6 and the operator must be able to explain that basis. The precise allocation of controller and processor responsibilities may depend on how a particular Discord server uses the Bot: server owners or administrators decide why their support tickets are collected and which staff can access them, while the Bot operator develops and operates the software and determines certain technical means and service operations.
+
+The operator must document the appropriate legal basis for each processing activity before publication and use. Legitimate interests may be relevant for operating, securing, and maintaining the Bot, but this requires an actual assessment and does not automatically justify every use or indefinite retention. Optional ratings and feedback should not be described as consent-based unless a valid consent process is actually used.
 
 ## 5. Where information is stored and who can access it
 
@@ -68,23 +70,19 @@ Server administrators configure log and transcript channels and are responsible 
 
 ## 6. Retention and deletion
 
-The code provided does **not** implement a general automatic retention period or scheduled database purge.
+**Current practice: ticket database records are retained indefinitely.** The operator has stated that ticket records are intended to remain available without a fixed expiry. The supplied code has no automatic retention period, scheduled purge, or per-server deletion command.
 
-When a ticket is deleted through the Bot, the ticket channel is deleted after the archive attempt, but the ticket's database row is retained and its status is changed to Deleted. The database schema also retains historical ticket records, ratings, feedback, and statistics. Deleting a ticket channel therefore does not itself erase its database record or the transcript attachment already uploaded to Discord.
+The SQLite database is a single database file (ticketcat.db) containing records for multiple Discord servers, distinguished by each record's server (guild) ID. It is not a separate database file controlled independently by each Discord server. Ticket metadata, close reasons, ratings, feedback, blacklist entries, and statistics remain in that database unless they are manually removed or the relevant database data/file is otherwise deleted.
 
-The operator has not yet confirmed backup retention, host-level logs, or any manual deletion process. Before publication, specify:
-- How long ticket records and feedback are kept.
-- How long Discord transcripts and log messages are kept.
-- Whether and how database backups are created and deleted.
-- How to request deletion and what may need to be retained for legitimate or legal reasons.
+When a ticket channel is deleted through the Bot, the ticket's database row is retained and its status is changed to Deleted. Deleting the Discord channel therefore does not itself erase the database record. Transcript attachments and log messages uploaded to Discord may also remain there until deleted from Discord.
 
-**Retention schedule:** [INSERT ACTUAL RETENTION PERIODS AND DELETION PROCESS. Do not claim automatic deletion unless it is implemented.]
+The operator has not confirmed backup retention, host-level logs, or a formal manual deletion workflow. Indefinite retention must be reviewed against the purposes for which the information is held and applicable data-protection requirements. Under the GDPR storage-limitation principle, personal data should not be kept longer than necessary; a blanket promise to keep identifiable ticket records forever may not be lawful in every circumstance. Requests for erasure or restriction will be assessed under applicable law, and records will be deleted where required. Contact **odsb uz@gmail.com** to make a request.
 
 ## 7. Your privacy rights and requests
 
 Depending on your location and applicable law, you may have rights to request access, correction, deletion, restriction, or portability of personal information, or to object to certain processing. Where processing relies on consent, you may be able to withdraw it.
 
-Contact **[INSERT CONTACT EMAIL]** with your request and enough information to identify the relevant server and ticket. Do not send passwords or sensitive identity documents through an ordinary Discord ticket. We may need to verify your request and may retain some information where permitted or required by law.
+Contact **odsb uz@gmail.com** with your request and enough information to identify the relevant server and ticket. Do not send passwords or sensitive identity documents through an ordinary Discord ticket. We may need to verify your request and may retain some information where permitted or required by law.
 
 Server administrators can delete Discord channels or messages they control, but that may not delete the corresponding SQLite record, uploaded transcript, log, or backup. Requests concerning information held by Discord itself should also be directed to Discord.
 
@@ -106,7 +104,9 @@ We may update this Policy when the Bot's features or data practices change. The 
 
 ## 12. Contact
 
-Privacy requests and questions: **[INSERT CONTACT EMAIL]**
+Privacy requests and questions: **odsb uz@gmail.com**.
+
+If you are in Denmark and believe personal data has been processed in breach of applicable data-protection law, you may lodge a complaint with the Danish Data Protection Agency (Datatilsynet): https://www.datatilsynet.dk/english.
 
 ---
 
